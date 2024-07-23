@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    flex-direction: column;
+    font-family: 'dosis', sans-serif;
+    height: inherit;
+    justify-content: center;
+}
+
+.fundo {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 35px;
+    margin: 20px;
+}
+
+.titulo {
+    background: linear-gradient(320deg, #241d20, #776a0a, #35c5a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.tela {
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    padding: 20px;
+    text-align: right;
+    width: 100%;
+    max-width: 326px;
+    margin: 0 auto;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-family: inherit;
+    font-size: 25px;
+    height: 60px;
+    flex: 1;
+    margin: 5px;
+}
+
+.calc-button:last-child {
+    color: #fff;
+    background: #1a126f;
+}
+
+.calc-button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover {
+    background-color: inherit;
+}
+
+.calc-button:active {
+    background-color: rgb(213, 213, 213);
+}
+
+.double {
+    flex: 2;
+}
+
+.triple {
+    flex: 3;
+}
+
+.imagen1 {
+    max-width: 169px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+@media (max-width: 600px) {
+    .tela {
+        font-size: 25px;
+    }
+
+    .calc-button {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .fundo {
+        padding: 10px 20px;
+    }
+}
